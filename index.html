@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAGR Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <div id="overlay" class="overlay">
+    <div class="overlay-content">
+      <h1 class="animated-title">Welcome</h1>
+      <p class="subtle-credit">CAGR Calculator • by Sajal Myra</p>
+    </div>
+  </div>
+
+  <header>
+    <h2>CAGR Calculator</h2>
+    <label class="switch">
+      <input type="checkbox" id="themeToggle" />
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <main>
+    <section id="welcome" class="intro">
+      <h2>Your smart investment assistant</h2>
+      <button id="startBtn">Start Calculating</button>
+    </section>
+
+    <section id="calculator" class="hidden">
+      <div class="card">
+        <h3>Calculate CAGR</h3>
+        <input type="number" id="initial" placeholder="Initial Investment" />
+        <input type="number" id="final" placeholder="Final Value" />
+        <input type="number" id="years" placeholder="Number of Years" />
+        <button onclick="calculateCAGR()">Calculate</button>
+        <p id="result"></p>
+        <p id="explanation" class="explanation"></p>
+      </div>
+    </section>
+
+    <section id="faq-section" class="hidden">
+      <h3>FAQs</h3>
+      <details class="faq-item">
+        <summary>What is CAGR?</summary>
+        <p>Compound Annual Growth Rate is the rate at which your investment grows annually to reach a final value.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Why use this tool?</summary>
+        <p>To estimate returns with clarity over a period and make sound investment decisions.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What do I need?</summary>
+        <p>Initial value, final value, and duration in years.</p>
+      </details>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
